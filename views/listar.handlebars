@@ -1,0 +1,11 @@
+<h1>Listando</h1>
+
+{{#each receitas}}
+  <div>
+    <input type="hidden" value="{{_id}}" name='id'>
+    <h3>{{nome}}</h3>
+    <p>Atendido dia: {{data}}<p>
+    <a href="/pdf/{{_id}}"><button>Obter Receita Via  PDF</button> </a> 
+    <hr>
+  </div>
+{{/each}}

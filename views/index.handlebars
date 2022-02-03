@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js" integrity="sha512-MgkNs0gNdrnOM7k+0L+wgiRc5aLgl74sJQKbIWegVIMvVGPc1+gc1L2oK9Wf/D9pq58eqIJAxOonYPVE5UwUFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emissão de Receita Médica</title>
+  <style> 
+  form{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid gray 1px;
+  }  
+  input{
+    width: 250px;
+  }
+  .box-form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  </style>
+</head>
+<body>
+  <div class='box-form'>
+    <form action='/' method="post" id='form'> 
+    <label for='nomePaciente'> Nome Paciente: </label> 
+      <input type="text" name='nome'/>
+    <label for='numero sus'>Cartão do SUS:</label>  
+      <input type="text" name='sus'>
+    <label for='enderecoPaciente'> Endereço: </label>
+      <input type='text' name='endereco' />  
+    <label for='medicamentoPaciente'>Medicamento ou Substância</label>
+      <input type='text' name='remedio' />
+    <label for="quantidadeRemedio">Quantidade: </label>
+      <input type="text" name='quantidade' />
+    <label for='dosagemMedicamento'>Dosagem: </label>
+      <input type="text" name='dosagem'>
+    <label for='dataEmissao'> Data: </label>
+      <input type="date" name='data' />  
+    <button type='submit'>Cadastrar Receita Do Paciente</button>
+  </form>
+  </div>
+  <a href="/listar">  <button type="submit">Listar Atendimentos</button> </a>
+</body>
+</html>
