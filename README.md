@@ -1,2 +1,2 @@
 # node-emitir-pdf
-Programa que dera um pdf apartir de informações inseridas
+Nesse programa feito em Node.js + express emite um pdf de informações inseridas pelos pacientes. O framework utilizado foi o nodemailer.
